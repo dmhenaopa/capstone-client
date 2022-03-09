@@ -1,6 +1,6 @@
 import React from 'react';
 
-function NavbarItem(props) {
+export function NavbarItem(props) {
     return(
         <li>
             <a href={props.link}>
@@ -9,5 +9,3 @@ function NavbarItem(props) {
         </li>
     );
 }
-
-export default NavbarItem;

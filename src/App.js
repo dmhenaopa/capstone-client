@@ -1,13 +1,13 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import Navbar from './components/Navbar/navbar';
-import Header from './components/Header/header';
-import Home from './components/Home/home';
-import Products from './components/Products/products';
-import AboutUs from './components/AboutUs/aboutUs';
-import Contact from './components/Contact/contact';
-import Login from './components/Login/login';
-import Footer from './components/Footer/footer';
+import { Navbar } from './components/Navbar/Navbar';
+import { Header } from './components/Header/Header';
+import { Home } from './pages/Home/Home';
+import { Products } from './pages/Products/Products';
+import { AboutUs } from './pages/AboutUs/AboutUs';
+import { Contact } from './pages/Contact/Contact';
+import { Login } from './pages/Login/Login';
+import { Footer } from './components/Footer/Footer';
 import './App.css';
 
 function App() {

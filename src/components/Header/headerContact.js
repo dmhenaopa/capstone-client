@@ -1,10 +1,8 @@
 import React from 'react';
 import Image from '../assets/amy-hirschi-JaoVGh5aJ3E-unsplash.jpg';
 
-function HeaderContact() {
+export function HeaderContact() {
     return (
         <img src={Image} alt=""></img>
     );
 }
-
-export default HeaderContact;

@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import React from 'react';
-import HeaderHome from "./headerHome";
-import HeaderProducts from "./headerProducts";
-import HeaderAboutUs from "./headerAboutUs";
-import HeaderContact from "./headerContact";
+import { HeaderHome } from "./HeaderHome";
+import { HeaderProducts } from "./HeaderProducts";
+import { HeaderAboutUs } from "./HeaderAboutUs";
+import { HeaderContact } from "./HeaderContact";
 
-function Header() {
+export function Header() {
     return (
         <Routes>
             <Route path='/' element={<HeaderHome />} />
@@ -15,5 +15,3 @@ function Header() {
         </Routes>
     );
 }
-
-export default Header;

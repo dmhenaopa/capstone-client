@@ -1,7 +1,8 @@
-import NavbarItem from "./navbarItem/navbarItem";
 import React from 'react';
+import { NavbarItem } from "./NavbarItem/NavbarItem";
+import { LoginButton } from "./LoginButton/LoginButton";
 
-function Navbar() {
+export function Navbar() {
     return (
         <nav>
             <ul>
@@ -10,8 +11,7 @@ function Navbar() {
                 <NavbarItem link='/nosotros' text={'Nosotros'}/>
                 <NavbarItem link='/contacto' text={'Contacto'}/>
             </ul>
+            <LoginButton />
         </nav>
     );
 }
-
-export default Navbar;
