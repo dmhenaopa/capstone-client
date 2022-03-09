@@ -1,25 +1,14 @@
-import NavbarItem from "./navbar-items/navbar-item";
+import NavbarItem from "./navbarItem/navbarItem";
+import React from 'react';
 
 function Navbar() {
     return (
         <nav>
             <ul>
-                <NavbarItem
-                    link='#'
-                    text={'Inicio'}
-                />
-                <NavbarItem
-                    link='#'
-                    text={'Productos'}
-                />
-                <NavbarItem
-                    link='#'
-                    text={'Nosotros'}
-                />
-                <NavbarItem
-                    link='#'
-                    text={'Contacto'}
-                />
+                <NavbarItem link='/' text={'Inicio'}/>
+                <NavbarItem link='/productos' text={'Productos'}/>
+                <NavbarItem link='/nosotros' text={'Nosotros'}/>
+                <NavbarItem link='/contacto' text={'Contacto'}/>
             </ul>
         </nav>
     );
