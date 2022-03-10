@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import React from 'react';
-import { HeaderHome } from "./HeaderHome";
-import { HeaderProducts } from "./HeaderProducts";
-import { HeaderAboutUs } from "./HeaderAboutUs";
-import { HeaderContact } from "./HeaderContact";
+import { HeaderHome } from "./HeaderHome/HeaderHome";
+import { HeaderProducts } from "./HeaderProducts/HeaderProducts";
+import { HeaderAboutUs } from "./HeaderAboutUs/HeaderAboutUs";
+import { HeaderContact } from "./HeaderContact/HeaderContact";
 
 export function Header() {
     return (

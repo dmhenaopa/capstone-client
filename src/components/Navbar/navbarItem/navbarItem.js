@@ -1,10 +1,10 @@
 import React from 'react';
 
-export function NavbarItem(props) {
+export function NavbarItem({ link, text }) {
     return(
         <li>
-            <a href={props.link}>
-                {props.text}
+            <a href={link}>
+                {text}
             </a>
         </li>
     );

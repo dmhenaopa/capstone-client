@@ -11,7 +11,7 @@ export function Navbar() {
                 <NavbarItem link='/nosotros' text={'Nosotros'}/>
                 <NavbarItem link='/contacto' text={'Contacto'}/>
             </ul>
-            <LoginButton />
+            <LoginButton to={'/login'}/>
         </nav>
     );
 }

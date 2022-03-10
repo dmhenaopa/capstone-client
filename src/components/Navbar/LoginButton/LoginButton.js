@@ -1,7 +1,9 @@
 import React from 'react';
 
-export function LoginButton() {
+export function LoginButton({ to }) {
     return (
-        <button>Iniciar sesión</button>
+        <a href={ to }>
+            <button>Iniciar sesión</button>
+        </a>
     );
 }
