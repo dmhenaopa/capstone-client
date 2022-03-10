@@ -8,6 +8,7 @@ import { AboutUs } from './pages/AboutUs/AboutUs';
 import { Contact } from './pages/Contact/Contact';
 import { Login } from './pages/Login/Login';
 import { Footer } from './components/Footer/Footer';
+import { Form } from './components/Forms/Form';
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path='contacto' element={<Contact />} />
         <Route path='login' element={<Login />} />
       </Routes>
+      <Form />
       <Footer/>
     </div>
   );
