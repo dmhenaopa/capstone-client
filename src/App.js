@@ -18,10 +18,10 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='productos' element={<Products />} />
-        <Route path='nosotros' element={<AboutUs />} />
-        <Route path='contacto' element={<Contact />} />
-        <Route path='login' element={<Login />} />
+        <Route path='/productos' element={<Products />} />
+        <Route path='/nosotros' element={<AboutUs />} />
+        <Route path='/contacto' element={<Contact />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
       <Form />
       <Footer/>

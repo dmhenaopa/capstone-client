@@ -9,9 +9,9 @@ export function Header() {
     return (
         <Routes>
             <Route path='/' element={<HeaderHome />} />
-            <Route path='productos' element={<HeaderProducts />} />
-            <Route path='nosotros' element={<HeaderAboutUs />} />
-            <Route path='contacto' element={<HeaderContact />} />
+            <Route path='/productos' element={<HeaderProducts />} />
+            <Route path='/nosotros' element={<HeaderAboutUs />} />
+            <Route path='/contacto' element={<HeaderContact />} />
         </Routes>
     );
 }

@@ -8,8 +8,8 @@ export function Form() {
     return (
         <Routes>
             <Route path='/' element={<FormHome />} />
-            <Route path='contacto' element={<FormContact />} />
-            <Route path='login' element={<FormLogin />} />
+            <Route path='/contacto' element={<FormContact />} />
+            <Route path='/login' element={<FormLogin />} />
         </Routes>
     );
 }
