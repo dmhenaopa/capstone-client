@@ -9,7 +9,7 @@ import { Contact } from './pages/Contact/Contact';
 import { Login } from './pages/Login/Login';
 import { Footer } from './components/Footer/Footer';
 import { Form } from './components/Forms/Form';
-import './App.css';
+import './scss/App.scss';
 
 function App() {
   return (

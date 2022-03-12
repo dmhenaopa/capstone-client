@@ -1,0 +1,12 @@
+// Variables
+$font-color-navbar: #F6F7F8;
+
+.aNavbarItem {
+    text-decoration: none;
+    color: $font-color-navbar;
+    padding: 15px;
+}
+
+.liNavbarItem {
+    display: inline-block;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-/* import { login } from './LoginButton.module.css'<button className={login}>Iniciar sesión</button>*/
+import './LoginButton.module.scss';
 
 export function LoginButton({ to }) {
     return (

@@ -1,12 +1,22 @@
-/*.login {
-  background-color: #FD0235;
+// Variables
+$color-blue: #0100be;
+$color-red: #fd0235;
+$color-white: #ffffff;
+$color-red-hover: #ffccd7;
+$color-font-hover: #fd0235;
+
+$font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Styles
+button {
+  background-color: $color-red;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: $color-white;
   cursor: pointer;
   display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-family;
   font-weight: 500;
   height: 40px;
   line-height: 20px;
@@ -22,10 +32,11 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  left: 132px;
 }
 
-.login:hover,
-.login:focus {
-  background-color: #FD02354D;
-  color: #FD0235;
-}*/
+button:hover,
+button:focus {
+  background-color: $color-red-hover;
+  color: $color-font-hover;
+}
