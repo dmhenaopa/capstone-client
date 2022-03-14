@@ -30,35 +30,38 @@ export function FormLogin() {
       >
         {( {values, errors, touched, handleSubmit, handleChange, handleBlur} ) => (
           <div className={styles.divFormLogin}>
-            <h1 className={styles.h1FormLogin}>Ingresar</h1>
-            <div className={styles.divLogin}>
-              <form onSubmit={handleSubmit}>
-                <div>
-                  <label htmlFor="username">Usuario</label>
-                  <input 
-                    type="text" 
-                    id="username" 
-                    name="username" 
-                    value={values.username}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                  />
-                  {touched.username && errors.username && <div className={styles.error}>{errors.username}</div>}
-                </div>
-                <div>
-                  <label htmlFor="password">Contraseña</label>
-                  <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    value={values.password}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                  />
-                  {touched.password && errors.password && <div className={styles.error}>{errors.password}</div>}
-                </div>
-                <button className={styles.buttonFormLogin} type="submit">Ingresar</button>
-              </form>
+            <div className={styles.divFormLoginColor}>
+              <h1 className={styles.h1FormLogin}>Ingresar</h1>
+              <div className={styles.divLogin}>
+                <form onSubmit={handleSubmit}>
+                  <div>
+                    <label htmlFor="username">Usuario</label>
+                    <input 
+                      type="text" 
+                      id="username" 
+                      name="username" 
+                      value={values.username}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                    />
+                    {touched.username && errors.username && <div className={styles.error}>{errors.username}</div>}
+                  </div>
+                  <div>
+                    <label htmlFor="password">Contraseña</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      value={values.password}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                    />
+                    {touched.password && errors.password && <div className={styles.error}>{errors.password}</div>}
+                  </div>
+                  <button className={styles.buttonFormLogin} type="submit">Ingresar</button>
+                  <a className={styles.aFormLogin} href='/contacto'>Aún no tengo un usuario</a>
+                </form>
+              </div>
             </div>
           </div>
         )}
