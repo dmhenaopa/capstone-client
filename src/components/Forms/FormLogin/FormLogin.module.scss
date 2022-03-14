@@ -1,0 +1,71 @@
+.divFormLogin {
+    position: absolute;
+    background-color: #2EC4B6;
+    width: 900px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    flex-direction: column;
+}
+
+.divLogin {
+    position: relative;
+    background-color: #B1EDE8;
+    width: 540px;
+    height: 150px;
+    padding-bottom: 229px;
+    display: flex;
+    padding-top: 31px;
+}
+
+.h1FormLogin {
+    font-size: 40px;
+    color: #1C2C40;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+label {
+    font-size: 16px;
+    color: #6F7482;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+label:after {
+    content: '*';
+    color: #ED0131;
+
+}
+
+input {
+    width: 460px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: #F8FAFC;
+    font-size: 16px;
+    border-color: #F8FAFC;
+    color: #6F7482;
+    margin-bottom: 27px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.error {
+    color: #ED0131;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 27px;
+    margin-top: -20px;
+    font-size: 15px;
+}
+
+.buttonFormHome {
+    margin-top: 10px;
+    margin-left: 182px;
+    margin-right: 182px;
+    min-width: 184px;
+}

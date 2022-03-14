@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import { Formik } from 'formik';
+import styles from './FormLogin.module.scss';
 
 export function FormLogin() {
   const [sendForm, setSendForm] = useState(false);
@@ -28,33 +29,38 @@ export function FormLogin() {
         }}
       >
         {( {values, errors, touched, handleSubmit, handleChange, handleBlur} ) => (
-          <form onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="username">Usuario</label>
-              <input 
-                type="text" 
-                id="username" 
-                name="username" 
-                value={values.username}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {touched.username && errors.username && <div className='error'>{errors.username}</div>}
+          <div className={styles.divFormLogin}>
+            <h1 className={styles.h1FormLogin}>Ingresar</h1>
+            <div className={styles.divLogin}>
+              <form onSubmit={handleSubmit}>
+                <div>
+                  <label htmlFor="username">Usuario</label>
+                  <input 
+                    type="text" 
+                    id="username" 
+                    name="username" 
+                    value={values.username}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {touched.username && errors.username && <div className='error'>{errors.username}</div>}
+                </div>
+                <div>
+                  <label htmlFor="password">Contraseña</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    value={values.password}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {touched.password && errors.password && <div className='error'>{errors.password}</div>}
+                </div>
+                <button type="submit">Ingresar</button>
+              </form>
             </div>
-            <div>
-              <label htmlFor="password">Contraseña</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                value={values.password}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {touched.password && errors.password && <div className='error'>{errors.password}</div>}
-            </div>
-            <button type="submit">Ingresar</button>
-          </form>
+          </div>
         )}
       </Formik>
     </Fragment>
