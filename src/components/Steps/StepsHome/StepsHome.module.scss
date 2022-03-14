@@ -1,0 +1,53 @@
+.divStepsHome {
+    position: absolute;
+    margin-top: 1300px;
+    width: 80%;
+    height: 380px;
+    color: #1C2C40;
+    padding: 64px 10%;
+}
+
+.h2StepsHome {
+    font-size: 40px;
+}
+
+.tableStepsHome {
+    width: 80%;
+    padding-top: 60px;
+    line-height: 27px;
+    table-layout: fixed;
+    margin: 0 auto;
+}
+
+.firstRow {
+    color: #20A4F3;
+    font-size: 15px;
+}
+
+.decoration:before {
+    content: '\2B24';
+    color: #20A4F3;
+    font-size:20px;
+}
+
+.secondRow {
+    font-size: 20px;
+}
+
+.thirdRow {
+    font-size: 16px;
+}
+
+td {
+    width:200px; 
+    word-wrap: break-word;
+}
+
+.whiteSpace {
+    color: #ffffff;
+}
+
+.whiteSpaceColumns {
+    color: #ffffff;
+    width: 30px;
+}

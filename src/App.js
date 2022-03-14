@@ -6,10 +6,11 @@ import { Home } from './pages/Home/Home';
 import { Products } from './pages/Products/Products';
 import { AboutUs } from './pages/AboutUs/AboutUs';
 import { Contact } from './pages/Contact/Contact';
-import { Login } from './pages/Login/Login';
-import { Footer } from './components/Footer/Footer';
-import { Form } from './components/Forms/Form';
+import { Login } from './pages/Login/Login';
 import { Feature } from './components/Feature/Feature';
+import { Steps } from './components/Steps/Steps';
+import { Form } from './components/Forms/Form';
+import { Footer } from './components/Footer/Footer';
 import './scss/App.scss';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/login' element={<Login />} />
       </Routes>
       <Feature />
+      <Steps />
       <Form />
       <Footer/>
     </div>
