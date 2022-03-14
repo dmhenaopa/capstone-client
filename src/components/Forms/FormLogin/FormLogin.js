@@ -43,7 +43,7 @@ export function FormLogin() {
                     onChange={handleChange}
                     onBlur={handleBlur}
                   />
-                  {touched.username && errors.username && <div className='error'>{errors.username}</div>}
+                  {touched.username && errors.username && <div className={styles.error}>{errors.username}</div>}
                 </div>
                 <div>
                   <label htmlFor="password">Contraseña</label>
@@ -55,9 +55,9 @@ export function FormLogin() {
                     onChange={handleChange}
                     onBlur={handleBlur}
                   />
-                  {touched.password && errors.password && <div className='error'>{errors.password}</div>}
+                  {touched.password && errors.password && <div className={styles.error}>{errors.password}</div>}
                 </div>
-                <button type="submit">Ingresar</button>
+                <button className={styles.buttonFormLogin} type="submit">Ingresar</button>
               </form>
             </div>
           </div>
