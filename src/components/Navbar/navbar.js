@@ -6,8 +6,8 @@ import styles from './Navbar.module.scss';
 
 export function Navbar() {
     return (
-        <nav className={styles.navbar}>
-            <img className={styles.logoNavbar} src={Image} alt=""></img>
+        <nav className={styles.navNavbar}>
+            <img className={styles.imgNavbar} src={Image} alt=""></img>
             <ul className={styles.ulNavbar}>
                 <NavbarItem link='/' text={'Inicio'}/>
                 <NavbarItem link='/productos' text={'Productos'}/>

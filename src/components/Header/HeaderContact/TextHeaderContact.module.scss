@@ -1,0 +1,23 @@
+.divHeaderContact {
+    background-color: #ffffff;
+    width: 400px;
+    height: 250px;
+    top: 400px;
+    right: 165px;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position:absolute;
+}
+
+.h1HeaderContact {
+    color:#1C2C40;
+    margin-bottom: 30px;
+}
+
+.pHeaderContact {
+    color: #1C2C40;
+    line-height: 32px;
+    margin-bottom: 30px;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Home() {
+export function FeatureProducts() {
     return (
         <div></div>
     );

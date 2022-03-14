@@ -1,10 +1,10 @@
 import React from 'react';
-import './LoginButton.module.scss';
+import styles from './LoginButton.module.scss';
 
 export function LoginButton({ to }) {
     return (
         <a href={ to }>
-            <button>Iniciar sesión</button>
+            <button className={styles.buttonNavbarLoginButton}>Iniciar sesión</button>
         </a>
     );
 }

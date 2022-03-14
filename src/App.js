@@ -9,6 +9,7 @@ import { Contact } from './pages/Contact/Contact';
 import { Login } from './pages/Login/Login';
 import { Footer } from './components/Footer/Footer';
 import { Form } from './components/Forms/Form';
+import { Feature } from './components/Feature/Feature';
 import './scss/App.scss';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path='/contacto' element={<Contact />} />
         <Route path='/login' element={<Login />} />
       </Routes>
+      <Feature />
       <Form />
       <Footer/>
     </div>

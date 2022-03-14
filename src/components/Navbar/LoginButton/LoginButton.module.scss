@@ -24,7 +24,6 @@ button {
   margin: 0;
   outline: none;
   padding: 10px 16px;
-  position: relative;
   text-align: center;
   text-decoration: none;
   transition: color 100ms;
@@ -32,11 +31,17 @@ button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  left: 132px;
+  position: absolute;
 }
 
 button:hover,
 button:focus {
   background-color: $color-red-hover;
   color: $color-font-hover;
+}
+
+.buttonNavbarLoginButton {
+  right: 132px;
+  top: 16px;
+  bottom: 16px;
 }

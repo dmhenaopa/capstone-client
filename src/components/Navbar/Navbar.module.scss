@@ -7,16 +7,18 @@ $color-blue-navbar: #0006BC;
     text-align: center;
 }
 
-.navbar {
+.navNavbar {
+    position: fixed;
     background-color: $color-blue-navbar;
     display: flex;
     height: 72px;
     width: 100%;
     justify-content: left;
     align-items: center;
+    z-index: 1;
 }
 
-.logoNavbar {
+.imgNavbar {
     height: 62px;
     padding: 0 132px;
 }

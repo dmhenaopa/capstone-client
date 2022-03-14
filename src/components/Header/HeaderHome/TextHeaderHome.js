@@ -1,11 +1,12 @@
 import React from 'react';
+import styles from './TextHeaderHome.module.scss';
 
 export function TextHeaderHome() {
     return (
-        <div>
-            <h1>Arancel y Legislación aduanera siempre a la mano</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href='/nosotros'>¡Quiero saber más!</a>
+        <div className={styles.divHeaderHome}>
+            <h1 className={styles.h1HeaderHome}>Arancel y Legislación Aduanera Sistematizados</h1>
+            <p className={styles.pHeaderHome}>Suministramos a nuestros suscriptores información actualizada, práctica y confiable del Arancel de Aduanas de Colombia y demás normas relacionadas con el régimen de aduanas y comercio exterior.</p>
+            <a className={styles.aHeaderHome} href='/nosotros'>¡Quiero saber más! </a>
         </div>
     );
 }
