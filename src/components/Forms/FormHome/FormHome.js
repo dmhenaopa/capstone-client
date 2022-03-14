@@ -62,7 +62,8 @@ export function FormHome() {
             <div className={styles.divStartNow}>
               <form id='form' onSubmit={SendEmail}>
                 <div>
-                  <label htmlFor="firstname">Nombre</label>
+                  <label htmlFor="firstname">Nombre </label>
+                  <br />
                   <input 
                     type="text" 
                     id="firstname" 
@@ -71,11 +72,12 @@ export function FormHome() {
                     onChange={handleChange}
                     onBlur={handleBlur}
                   />
-                  {touched.firstname && errors.firstname && <div className='error'>{errors.firstname}</div>}
+                  {touched.firstname && errors.firstname && <div className={styles.error}>{errors.firstname}</div>}
                 </div>
 
                 <div>
-                  <label htmlFor="lastname">Apellidos</label>
+                  <label htmlFor="lastname">Apellidos </label>
+                  <br />
                   <input 
                     type="text" 
                     id="lastname" 
@@ -84,11 +86,12 @@ export function FormHome() {
                     onChange={handleChange}
                     onBlur={handleBlur}
                   />
-                  {touched.lastname && errors.lastname && <div className='error'>{errors.lastname}</div>}
+                  {touched.lastname && errors.lastname && <div className={styles.error}>{errors.lastname}</div>}
                 </div>
 
                 <div>
-                  <label htmlFor="email">Correo electrónico</label>
+                  <label htmlFor="email">Correo electrónico </label>
+                  <br />
                   <input 
                     type="email" 
                     id="email" 
@@ -98,11 +101,12 @@ export function FormHome() {
                     onChange={handleChange}
                     onBlur={handleBlur}
                   />
-                  {touched.email && errors.email && <div className='error'>{errors.email}</div>}
+                  {touched.email && errors.email && <div className={styles.error}>{errors.email}</div>}
                 </div>
 
                 <div>
-                  <label htmlFor="telephone">Número telefónico</label>
+                  <label htmlFor="telephone">Número telefónico </label>
+                  <br />
                   <input
                     type="text"
                     id="telephone"
@@ -112,9 +116,9 @@ export function FormHome() {
                     onChange={handleChange}
                     onBlur={handleBlur}
                   />
-                  {touched.telephone && errors.telephone && <div className='error'>{errors.telephone}</div>}
+                  {touched.telephone && errors.telephone && <div className={styles.error}>{errors.telephone}</div>}
                 </div>
-                <button type="submit">Contactar a ventas</button>
+                <button type="submit" className={styles.buttonFormHome}>Contactar a ventas</button>
               </form>
             </div>
           </div>
