@@ -5,6 +5,8 @@
     height: 650px;
     margin-top: 1780px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .divTextFormHome {
@@ -12,21 +14,22 @@
     width: 540px;
     padding-top: 229px;
     padding-bottom: 229px;
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .h2FormHome {
     font-size: 40px;
     color: #1C2C40;
     text-align: center;
-    padding: 15px;
+    padding-bottom: 15px;
 }
 
 .pFormHome {
     line-height: 32px;
     color: #1C2C40;
     width: 450px;
-    padding-left: 45px;
 }
 
 .divStartNow {
@@ -34,7 +37,6 @@
     width: 550px;
     height: 560px;
     float: right;
-    margin-top: 30px;
     padding-top: 31px;
 }
 
@@ -77,4 +79,5 @@ input {
     margin-top: 10px;
     margin-left: 182px;
     margin-right: 182px;
+    min-width: 184px;
 }
