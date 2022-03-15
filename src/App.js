@@ -11,6 +11,8 @@ import { Feature } from './components/Feature/Feature';
 import { Steps } from './components/Steps/Steps';
 import { Form } from './components/Forms/Form';
 import { Footer } from './components/Footer/Footer';
+import { User } from './components/User/User';
+import { Admin } from './components/Admin/Admin';
 import './scss/App.scss';
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
         <Route path='/nosotros' element={<AboutUs />} />
         <Route path='/contacto' element={<Contact />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/user01' element={<User />} />
+        <Route path='/admin' element={<Admin />} />
       </Routes>
       <Feature />
       <Steps />

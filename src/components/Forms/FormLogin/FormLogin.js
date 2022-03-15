@@ -24,6 +24,7 @@ export function FormLogin() {
         onSubmit={(values, { resetForm })=> {
           resetForm();
           //console.log(values); //Aqui va conexion a api o envio de datos
+          //alert(fetch("https://jsonplaceholder.typicode.com/users/1"));
           setSendForm(true);
           setTimeout(() => setSendForm(false), 10000);
         }}
