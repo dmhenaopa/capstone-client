@@ -10,8 +10,11 @@ export function FeatureProducts() {
             <h2 className={styles.h2FeatureProducts}>Puede elegir entre 3 tipos de suscripciones</h2>
             <div className={styles.divImgSubscriptions}>
                 <div className={styles.divImagesFeatureProducts}>
+                    <div className={styles.divCircle1}></div>
                     <img className={styles.imgFeatureProduct1} src={Image1} alt=""></img>
+                    <div className={styles.divCircle2}></div>
                     <img className={styles.imgFeatureProduct2} src={Image2} alt=""></img>
+                    <div className={styles.divCircle3}></div>
                     <img className={styles.imgFeatureProduct3} src={Image3} alt=""></img>
                 </div>
                 <div className={styles.divSubscriptions}>
