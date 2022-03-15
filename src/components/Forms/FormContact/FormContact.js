@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Formik } from 'formik';
 import emailjs from '@emailjs/browser';
 import swal from 'sweetalert';
+import styles from './FormContact.module.scss';
 
 export function FormContact() {
   function SendEmail(e) {
@@ -57,87 +58,101 @@ export function FormContact() {
       >
 
         {( {values, errors, touched, handleChange, handleBlur} ) => (
-          <form id='form' onSubmit={SendEmail}>
-            <div>
-              <label htmlFor="firstname">Nombre</label>
-              <input 
-                type="text" 
-                id="firstname" 
-                name="firstname" 
-                value={values.firstname}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {touched.firstname && errors.firstname && <div className='error'>{errors.firstname}</div>}
-            </div>
+          <div className={styles.divFormContact}>
+            <div className={styles.divContact}>
+              <form id='form' onSubmit={SendEmail}>
+                <div className={styles.divLeftColumn}>
+                  <div>
+                    <label htmlFor="firstname">Nombre </label>
+                    <br />
+                    <input 
+                      type="text" 
+                      id="firstname" 
+                      name="firstname" 
+                      value={values.firstname}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                    />
+                    {touched.firstname && errors.firstname && <div className={styles.error}>{errors.firstname}</div>}
+                  </div>
 
-            <div>
-              <label htmlFor="lastname">Apellidos</label>
-              <input 
-                type="text" 
-                id="lastname" 
-                name="lastname" 
-                value={values.lastname}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {touched.lastname && errors.lastname && <div className='error'>{errors.lastname}</div>}
-            </div>
+                  <div>
+                  <label htmlFor="email">Correo electrónico </label>
+                  <br />
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email"
+                    placeholder='usuario@correo.com'
+                    value={values.email}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {touched.email && errors.email && <div className={styles.error}>{errors.email}</div>}
+                </div>
 
-            <div>
-              <label htmlFor="email">Correo electrónico</label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email"
-                placeholder='usuario@correo.com'
-                value={values.email}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {touched.email && errors.email && <div className='error'>{errors.email}</div>}
-            </div>
+                <div>
+                  <label htmlFor='subject'>Asunto </label>
+                  <br />
+                  <select required id='subject' name='subject'>
+                    <option></option>
+                    <option value='compra'>Compra de productos</option>
+                    <option value='actualización'>Actualización de datos</option>
+                    <option value='información'>Información productos</option>
+                    <option value='soporte-tech'>Soporte o fallas técnicas</option>
+                    <option value='otro'>Otro</option>
+                  </select>
+                  {touched.subject && errors.subject && <div className={styles.error}>{errors.subject}</div>}
+                </div>
+              </div>
 
-            <div>
-              <label htmlFor="telephone">Número telefónico</label>
-              <input
-                type="text"
-                id="telephone"
-                name="telephone"
-                placeholder='300-000-0000 o 300000000'
-                value={values.telephone}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {touched.telephone && errors.telephone && <div className='error'>{errors.telephone}</div>}
-            </div>
+              <div className={styles.divRightColumn}>
+                <div>
+                  <label htmlFor="lastname">Apellidos </label>
+                  <br />
+                  <input 
+                    type="text" 
+                    id="lastname" 
+                    name="lastname" 
+                    value={values.lastname}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {touched.lastname && errors.lastname && <div className={styles.error}>{errors.lastname}</div>}
+                </div>
 
-            <div>
-              <label htmlFor='subject'>Asunto</label>
-              <select required id='subject' name='subject'>
-                <option></option>
-                <option value='compra'>Compra de productos</option>
-                <option value='actualización'>Actualización de datos</option>
-                <option value='información'>Información productos</option>
-                <option value='soporte-tech'>Soporte o fallas técnicas</option>
-                <option value='otro'>Otro</option>
-              </select>
-              {touched.subject && errors.subject && <div className='error'>{errors.subject}</div>}
-            </div>
+                <div>
+                  <label htmlFor="telephone">Número telefónico </label>
+                  <br />
+                  <input
+                    type="text"
+                    id="telephone"
+                    name="telephone"
+                    placeholder='300-000-0000 o 300000000'
+                    value={values.telephone}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {touched.telephone && errors.telephone && <div className={styles.error}>{errors.telephone}</div>}
+                </div>
 
-            <div>
-              <label htmlFor='description'>Descripción</label>
-              <textarea
-                required
-                id='description'
-                name='description'
-                placeholder='Ingrese un texto que describa su solicitud'>
-              </textarea>
-              {touched.description && errors.description && <div className='error'>{errors.description}</div>}
-            </div>
+                <div>
+                  <label htmlFor='description'>Descripción </label>
+                  <br />
+                  <textarea
+                    required
+                    id='description'
+                    name='description'
+                    placeholder='Ingrese un texto que describa su solicitud'>
+                  </textarea>
+                  {touched.description && errors.description && <div className={styles.error}>{errors.description}</div>}
+                </div>
+              </div>
 
-            <button type="submit">Enviar formulario</button>
-          </form>
+                <button className={styles.buttonFormContact} type="submit">Enviar formulario</button>
+              </form>
+            </div>
+          </div>
         )}
       </Formik>
     </Fragment>
