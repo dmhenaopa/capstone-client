@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './Button.module.scss';
 
-export function LoginButton() {
+export function LogoutButton() {
     return (
         <a href='/login'>
-            <button className={styles.buttonNavbarLoginButton}>Iniciar sesión</button>
+            <button className={styles.buttonNavbarLoginButton}>Cerrar sesión</button>
         </a>
     );
 }

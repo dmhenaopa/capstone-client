@@ -13,14 +13,36 @@ import { Form } from './components/Forms/Form';
 import { Footer } from './components/Footer/Footer';
 import { User } from './components/User/User';
 import { Admin } from './components/Admin/Admin';
-import './scss/App.scss';
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <Header />
       <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/productos' element={<Products />} />
+        <Route path='/nosotros' element={<AboutUs />} />
+        <Route path='/contacto' element={<Contact />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/user01/*' element={<User />} />
+        <Route path='/admin/*' element={<Admin />} />
+      </Routes>
+      <Feature />
+      <Steps />
+      <Form />
+      <User />
+      <Admin />
+      <Footer/>
+    </div>
+  );
+}
+
+export default App;
+
+/*
+<Routes>
         <Route path='/' element={<Home />} />
         <Route path='/productos' element={<Products />} />
         <Route path='/nosotros' element={<AboutUs />} />
@@ -29,12 +51,4 @@ function App() {
         <Route path='/user01' element={<User />} />
         <Route path='/admin' element={<Admin />} />
       </Routes>
-      <Feature />
-      <Steps />
-      <Form />
-      <Footer/>
-    </div>
-  );
-}
-
-export default App;
+*/
