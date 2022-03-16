@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import styles from './AdminUsers.module.scss';
+import { Users } from './Users';
 
 export function AdminUsers() {
     return (
@@ -13,7 +14,7 @@ export function AdminUsers() {
                 <li className={styles.liMenu}><a className={styles.aMenuProducts} href="/admin/productos">Productos</a></li>
             </ul>
             <div className={styles.divTabs}>
-                
+              <Users />  
             </div>
         </Fragment>
     );

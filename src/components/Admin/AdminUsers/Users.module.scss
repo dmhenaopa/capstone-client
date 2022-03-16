@@ -1,0 +1,30 @@
+.inputSearch {
+    position: absolute;
+    top: 17px;
+    left: 5%;
+    padding-left: 20px;
+}
+
+.buttonNewProduct {
+    position: absolute;
+    top: 30px;
+    right: 10%;
+}
+
+.divUsersTable {
+    position: absolute;
+    top: 120px;
+    left: 5%;
+    width: 90%;
+    height: 75%;
+    color: #1C2C40;
+    background-color: #B1EDE8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableUsersTable {
+    position: absolute;
+    font-size: 30px;
+}

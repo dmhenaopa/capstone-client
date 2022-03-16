@@ -7,6 +7,13 @@
     color: #1C2C40;
 }
 
+.inputSearch {
+    position: absolute;
+    top: 17px;
+    left: 5%;
+    padding-left: 20px;
+}
+
 .buttonNewProduct {
     position: absolute;
     top: 30px;
@@ -20,8 +27,7 @@
     height: 150px;
     margin-bottom: 5px;
     border-radius: 1%;
-    display: grid;
-    grid-template-columns: 2fr 10px 1fr 1fr 1fr 1fr 10px;
+    display: flex;
     align-items: center;
 }
 
@@ -32,9 +38,7 @@
     height: 150px;
     margin-top: 170px;
     border-radius: 1%;
-    display: grid;
-    grid-template-columns: 2fr 10px 1fr 1fr 1fr 1fr 10px;
-    column-gap: 0;
+    display: flex;
     align-items: center;
 }
 
@@ -45,32 +49,42 @@
     height: 150px;
     margin-top: 340px;
     border-radius: 1%;
-    display: grid;
-    grid-template-columns: 2fr 10px 1fr 1fr 1fr 1fr;
-    align-items: center;
     margin-right: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .h2Product {
-    grid-column: 1 / 1;
-    width: 80%;
+    float: left;
+    width: 40%;
     text-align: center;
     font-weight: 400;
-    margin-left: 30px;
+    margin: auto 5%;
+}
+
+.divButtons {
+    position: relative;
+    width: 60%;
+    float: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    align-items: center;
+
 }
 
 .buttonDownload {
-    grid-column: 3 / 3;
+    grid-column: 1 / 1;
 }
 
 .buttonUpdate {
-    grid-column: 4 / 4;
+    grid-column: 2 / 2;
 }
 
 .buttonDelete {
-    grid-column: 5 / 5;
+    grid-column: 3 / 3;
 }
 
 .buttonPermissions {
-    grid-column: 6 / 6;
+    grid-column: 4 / 4;
+    margin: -10px;
 }
