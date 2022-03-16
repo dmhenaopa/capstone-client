@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import styles from './AdminProducts.module.scss';
+import { Products } from './Products';
 
 export function AdminProducts() {
     return (
@@ -13,7 +14,7 @@ export function AdminProducts() {
                 <li className={styles.liMenu}><a className={styles.aMenuProducts} href="/admin/productos">Productos</a></li>
             </ul>
             <div className={styles.divTabs}>
-                
+                <Products />
             </div>
         </Fragment>
     );
