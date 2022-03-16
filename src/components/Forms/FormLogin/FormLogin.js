@@ -23,6 +23,15 @@ export function FormLogin() {
         }}
         onSubmit={(values, { resetForm })=> {
           resetForm();
+          fetch('http://localhost:5000/api/v1/user/login', {
+            method: 'POST',
+            body: JSON.stringify({email: values.username, password: values.password}),
+            headers:{
+              'Content-Type': 'application/json'
+            }
+          })
+          .then(response => response.json())
+          .then(data => console.log(data));
           //console.log(values); //Aqui va conexion a api o envio de datos
           setSendForm(true);
           setTimeout(() => setSendForm(false), 10000);
