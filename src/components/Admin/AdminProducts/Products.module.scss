@@ -12,46 +12,58 @@
     top: 17px;
     left: 5%;
     padding-left: 20px;
+    border-radius: 20px;
 }
 
 .buttonNewProduct {
     position: absolute;
     top: 30px;
     right: 10%;
+    background-color: #12b76a;
+    color: #ffffff;
+}
+
+.buttonNewProduct:hover,
+.buttonNewProduct:focus {
+    background-color: #a6f4c5;
+    color: #027a48;
 }
 
 .divProduct1 {
-    background-color: #B1EDE8;
+    background-color: #adb9d1;
     position: absolute;
     width: 100%;
-    height: 150px;
+    height: 100px;
     margin-bottom: 5px;
     border-radius: 1%;
     display: flex;
     align-items: center;
+    line-height: 32px;
 }
 
 .divProduct2 {
-    background-color: #B1EDE8;
+    background-color: #adb9d1;
     position: absolute;
     width: 100%;
-    height: 150px;
-    margin-top: 170px;
+    height: 100px;
+    margin-top: 130px;
     border-radius: 1%;
     display: flex;
     align-items: center;
+    line-height: 32px;
 }
 
 .divProduct3 {
-    background-color: #B1EDE8;
+    background-color: #adb9d1;
     position: absolute;
     width: 100%;
-    height: 150px;
-    margin-top: 340px;
+    height: 100px;
+    margin-top: 260px;
     border-radius: 1%;
     margin-right: 30px;
     display: flex;
     align-items: center;
+    line-height: 32px;
 }
 
 .h2Product {
@@ -60,6 +72,7 @@
     text-align: center;
     font-weight: 400;
     margin: auto 5%;
+    font-size: 17px;
 }
 
 .divButtons {
@@ -67,24 +80,55 @@
     width: 60%;
     float: right;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
     align-items: center;
 
 }
 
 .buttonDownload {
     grid-column: 1 / 1;
+    background-color: #0ba5ec;
+    color: #ffffff;
+}
+
+.buttonDownload:hover,
+.buttonDownload:focus {
+    background-color: #b9e6fe;
+    color: #026aa2;
 }
 
 .buttonUpdate {
     grid-column: 2 / 2;
+    background-color: #0ba5ec;
+    color: #ffffff;
 }
 
-.buttonDelete {
-    grid-column: 3 / 3;
+.buttonUpdate:hover,
+.buttonUpdate:focus {
+    background-color: #b9e6fe;
+    color: #026aa2;
 }
 
 .buttonPermissions {
+    grid-column: 3 / 3;
+    background-color: #0ba5ec;
+    color: #ffffff;
+}
+
+.buttonPermissions:hover,
+.buttonPermissions:focus {
+    background-color: #b9e6fe;
+    color: #026aa2;
+}
+
+.buttonDelete {
     grid-column: 4 / 4;
-    margin: -10px;
+    background-color: #f04438;
+    color: #ffffff;
+}
+
+.buttonDelete:hover,
+.buttonDelete:focus {
+  background-color: #fecdca;
+  color: #b42318;
 }

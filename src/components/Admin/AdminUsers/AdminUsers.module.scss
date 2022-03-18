@@ -22,11 +22,11 @@ hr {
 
 .divTabs {
     position: relative;
-    top: 320px;
+    top: 310px;
     width: 90%;
-    height: 450px;
+    height: 650px;
     line-height: normal;
-    background-color: #2EC4B6;
+    background-color: #d8deec;
     margin: 0 auto;
     border-radius: 1%;
 }
@@ -49,15 +49,21 @@ hr {
 }
 
 .liMenu a {
-    padding: 15px 20px 40px 30px;
+    padding: 15px 20px 40px 20px;
     border-radius: 20%;
-    color: #0006BC;
+    font-size: 20px;
+    color: #6f7588;
+    text-decoration: none;
+}
+
+.liMenu .aMenuProducts {
+    color: #ffffff;
 }
 
 .aMenuProducts {
-    background-color: #B1EDE8;
+    background-color: #6f7588;
 }
 
 .aMenuUsers {
-    background-color: #2EC4B6;
+    background-color: #d8deec;
 }

@@ -12,8 +12,8 @@ export function Products() {
                     <div className={styles.divButtons}>
                         <button className={styles.buttonDownload}>Descargar</button>
                         <button className={styles.buttonUpdate}>Actualizar</button>
-                        <button className={styles.buttonDelete}>Eliminar</button>
                         <button className={styles.buttonPermissions}>Asignar permisos</button>
+                        <button className={styles.buttonDelete}>Eliminar</button>
                     </div>
                 </div>
                 <div className={styles.divProduct2}>
@@ -21,8 +21,8 @@ export function Products() {
                     <div className={styles.divButtons}>
                         <button className={styles.buttonDownload}>Descargar</button>
                         <button className={styles.buttonUpdate}>Actualizar</button>
-                        <button className={styles.buttonDelete}>Eliminar</button>
                         <button className={styles.buttonPermissions}>Asignar permisos</button>
+                        <button className={styles.buttonDelete}>Eliminar</button>
                     </div>
                 </div>
                 <div className={styles.divProduct3}>
@@ -30,8 +30,8 @@ export function Products() {
                     <div className={styles.divButtons}>
                         <button className={styles.buttonDownload}>Descargar</button>
                         <button className={styles.buttonUpdate}>Actualizar</button>
-                        <button className={styles.buttonDelete}>Eliminar</button>
                         <button className={styles.buttonPermissions}>Asignar permisos</button>
+                        <button className={styles.buttonDelete}>Eliminar</button>
                     </div>
                 </div>
             </div>

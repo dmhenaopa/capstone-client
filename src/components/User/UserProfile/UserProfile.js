@@ -1,5 +1,7 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect, setState } from 'react';
+import Image from '../../assets/avatar-profile.png'
 import styles from './UserProfile.module.scss';
+
 
 export function UserProfile() {
     return (
@@ -13,6 +15,31 @@ export function UserProfile() {
                 <li className={styles.liMenu}><a className={styles.aMenuProfile} href="/user01/perfil">Mi perfil</a></li>
             </ul>
             <div className={styles.divTabs}>
+                <div className={styles.divUserProfile}>
+                    <img className={styles.imgProfile} src={Image} alt=""></img>
+                    <table className={styles.tableUserTable}>
+                        <tbody>
+                            <td className={styles.tdBold}>
+                                <tr>Nombre:</tr>
+                                <tr>Apellidos:</tr>
+                                <tr>Teléfono celular:</tr>
+                                <tr>Correo electrónico:</tr>
+                                <tr>Empresa:</tr>
+                            </td>
+                            <td>
+                                <tr>Frailejón Ernesto</tr>
+                                <tr>Pérez</tr>
+                                <tr>300-1234567</tr>
+                                <tr>ernestico@paramo.com</tr>
+                                <tr>Páramo Co.</tr>
+                            </td>
+                        </tbody>
+                    </table>
+                </div>
+                <div className={styles.divButtons}>
+                    <button className={styles.buttonUpdate}>Actualizar información</button>
+                    <button className={styles.buttonDelete}>Eliminar mi perfil</button>
+                </div>
             </div>
         </Fragment>
     );

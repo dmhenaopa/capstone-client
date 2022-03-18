@@ -1,6 +1,14 @@
+// Variables
+$color-button-CTA: #f79009;
+
+$color-font-button-CTA: #ffffff;
+$color-button-CTA-hover: #fedf89;
+$color-button-CTA-font-hover: #B54708;
+
+// Styles
 .divFormHome {
     position: absolute;
-    background-color: #2EC4B6;
+    background-color: #2ec4b6;
     width: 100%;
     height: 800px;
     margin-top: 1780px;
@@ -12,11 +20,11 @@
 .divTextFormHome {
     float: left;
     width: 540px;
-    padding-top: 229px;
-    padding-bottom: 229px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .h2FormHome {
@@ -38,6 +46,10 @@
     height: 600px;
     float: right;
     padding-top: 31px;
+    padding-bottom: 31px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 70px;
 }
 
 label {
@@ -76,8 +88,35 @@ input {
 }
 
 .buttonFormHome {
-    margin-top: 10px;
-    margin-left: 182px;
-    margin-right: 182px;
-    min-width: 184px;
+  background-color: $color-button-CTA;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: $color-font-button-CTA;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 23px;
+  height: 50px;
+  width: 280px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+  margin: 15px 135px;
+}
+
+.buttonFormHome:hover,
+.buttonFormHome:focus {
+  background-color: $color-button-CTA-hover;
+  color: $color-button-CTA-font-hover;
 }
