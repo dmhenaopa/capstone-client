@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect, setState } from 'react';
-import Image from '../../assets/avatar-profile.png'
 import styles from './UserProfile.module.scss';
+import Avatar from "boring-avatars";
 
 
 export function UserProfile() {
@@ -16,7 +16,9 @@ export function UserProfile() {
             </ul>
             <div className={styles.divTabs}>
                 <div className={styles.divUserProfile}>
-                    <img className={styles.imgProfile} src={Image} alt=""></img>
+                    <div className={styles.imgProfile}>
+                        <Avatar size={220} name="Frailejon Ernesto Perez" variant="bauhaus" colors={["#16C1C8", "#49CCCC", "#7CD7CF", "#AEE1D3", "#E1ECD6"]} square={'True'} />
+                    </div>
                     <table className={styles.tableUserTable}>
                         <tbody>
                             <td className={styles.tdBold}>
