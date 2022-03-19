@@ -1,0 +1,135 @@
+.divWelcomeUser {
+    position: absolute;
+    width: 100%;
+    height: 820px;
+}
+
+.h1User {
+    position: relative;
+    top: 72px;
+    padding: 80px 80px 10px 80px;
+    color: #1C2C40;
+}
+
+hr {
+    width: 50%;
+    height: 2px;
+    background-color: #1C2C40;
+    top: 80px;
+    position: relative;
+    left: 4%;
+}
+
+.divTabs {
+    position: relative;
+    top: 280px;
+    width: 90%;
+    height: 400px;
+    line-height: normal;
+    background-color: #d8deec;
+    margin: 0 auto;
+    border-radius: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.ulMenu {
+    position: relative;
+    top: 270px;
+    width: 90%;
+    font-size: 25px;
+    list-style: none;
+    line-height: normal;
+    font-weight: bold;
+    left: 6%;
+}
+
+.liMenu {
+    float:left;
+    margin:0 0 0 3px;
+    padding:0;
+}
+
+.liMenu a {
+    padding: 15px 20px 40px 20px;
+    border-radius: 20%;
+    font-size: 20px;
+    color: #6f7588;
+    text-decoration: none;
+}
+
+.liMenu .aMenuProducts {
+    color: #ffffff;
+}
+
+.aMenuProducts {
+    background-color: #6f7588;
+}
+
+.aMenuProfile {
+    background-color: #d8deec;
+}
+
+.divUserProfile {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color: #adb9d1;
+    width: 90%;
+    top: 40px;
+    border-radius: 1%;
+    height: 250px;
+    line-height: 32px;
+}
+
+.tdBold {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.imgProfile {
+    float: left;
+    width: 250px;
+    border: 4px solid #1C2C40;
+    background-color: #ffffff;
+}
+
+.tableUserTable {
+    float: right;
+    margin-left: 100px;
+}
+
+.divButtons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 320px;
+}
+
+.buttonUpdate {
+    background-color: #0ba5ec;
+    color: #ffffff;
+    float: left;
+    margin-right: 300px;
+}
+
+.buttonUpdate:hover,
+.buttonUpdate:focus {
+    background-color: #b9e6fe;
+    color: #026aa2;
+}
+
+.buttonDelete {
+    grid-column: 4 / 4;
+    background-color: #f04438;
+    color: #ffffff;
+    float: right;
+    margin-left: 300px;
+}
+
+.buttonDelete:hover,
+.buttonDelete:focus {
+  background-color: #fecdca;
+  color: #b42318;
+}

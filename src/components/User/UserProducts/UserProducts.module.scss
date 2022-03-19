@@ -1,0 +1,145 @@
+.divWelcomeUser {
+    position: absolute;
+    width: 100%;
+    height: 920px;
+}
+
+.h1User {
+    position: relative;
+    top: 72px;
+    padding: 80px 80px 10px 80px;
+    color: #1C2C40;
+}
+
+hr {
+    width: 50%;
+    height: 2px;
+    background-color: #1C2C40;
+    top: 80px;
+    position: relative;
+    left: 4%;
+}
+
+.divTabs {
+    position: relative;
+    top: 310px;
+    width: 90%;
+    height: 500px;
+    line-height: normal;
+    background-color: #d8deec;
+    margin: 0 auto;
+    border-radius: 1%;
+}
+
+.ulMenu {
+    position: relative;
+    top: 270px;
+    width: 90%;
+    font-size: 25px;
+    list-style: none;
+    line-height: normal;
+    font-weight: bold;
+    left: 6%;
+}
+
+.liMenu {
+    float:left;
+    margin:0 0 0 3px;
+    padding:0;
+}
+
+.liMenu a {
+    padding: 15px 20px 40px 20px;
+    border-radius: 20%;
+    font-size: 20px;
+    color: #6f7588;
+    text-decoration: none;
+}
+
+.liMenu .aMenuProfile {
+    color: #ffffff;
+}
+
+.aMenuProducts {
+    background-color: #d8deec;
+}
+
+.aMenuProfile {
+    background-color: #6f7588;
+}
+
+.divProducts {
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    width: 90%;
+    height: 75%;
+    color: #1C2C40;
+}
+
+.inputSearch {
+    position: absolute;
+    top: 17px;
+    left: 5%;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.divProduct1 {
+    background-color: #adb9d1;
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    margin-bottom: 5px;
+    border-radius: 1%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    line-height: 32px;
+}
+
+.divProduct2 {
+    background-color: #adb9d1;
+    position: absolute;
+    width: 100%;
+    height: 210px;
+    margin-top: 140px;
+    border-radius: 1%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    line-height: 32px;
+}
+
+.divTextProducts {
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+    grid-area: 1 / 1;
+    margin-left: 30px;
+}
+
+.h2Product {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.pProducts {
+    margin-left: 20px;
+}
+
+.pProducts ul {
+    margin-left: 30px;
+}
+
+.buttonDownload {
+    background-color: #12b76a;
+    color: #ffffff;
+    grid-area: 1 / 2;
+}
+
+.buttonDownload:hover,
+.buttonDownload:focus {
+    background-color: #a6f4c5;
+    color: #027a48;
+}

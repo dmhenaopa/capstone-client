@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from "react-router-dom";
+import { Navbar } from './components/Navbar/Navbar';
+import { Header } from './components/Header/Header';
+import { Home } from './pages/Home/Home';
+import { Products } from './pages/Products/Products';
+import { AboutUs } from './pages/AboutUs/AboutUs';
+import { Contact } from './pages/Contact/Contact';
+import { Login } from './pages/Login/Login';
+import { Feature } from './components/Feature/Feature';
+import { Steps } from './components/Steps/Steps';
+import { Form } from './components/Forms/Form';
+import { Footer } from './components/Footer/Footer';
+import { User } from './components/User/User';
+import { Admin } from './components/Admin/Admin';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Header />
+      <Routes>
+        <Route path='#/' element={<Home />} />
+        <Route path='#/productos' element={<Products />} />
+        <Route path='#/nosotros' element={<AboutUs />} />
+        <Route path='#/contacto' element={<Contact />} />
+        <Route path='#/login' element={<Login />} />
+        <Route path='#/user01/*' element={<User />} />
+        <Route path='#/admin/*' element={<Admin />} />
+      </Routes>
+      <Feature />
+      <Steps />
+      <Form />
+      <User />
+      <Admin />
+      <Footer/>
     </div>
   );
 }
 
 export default App;
+
+/*
+<Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/productos' element={<Products />} />
+        <Route path='/nosotros' element={<AboutUs />} />
+        <Route path='/contacto' element={<Contact />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/user01' element={<User />} />
+        <Route path='/admin' element={<Admin />} />
+      </Routes>
+*/

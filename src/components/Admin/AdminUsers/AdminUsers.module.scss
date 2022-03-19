@@ -1,0 +1,69 @@
+.divWelcomeUser {
+    position: absolute;
+    width: 100%;
+    height: 1100px;
+}
+
+.h1User {
+    position: relative;
+    top: 72px;
+    padding: 80px 80px 10px 80px;
+    color: #1C2C40;
+}
+
+hr {
+    width: 50%;
+    height: 2px;
+    background-color: #1C2C40;
+    top: 80px;
+    position: relative;
+    left: 4%;
+}
+
+.divTabs {
+    position: relative;
+    top: 310px;
+    width: 90%;
+    height: 650px;
+    line-height: normal;
+    background-color: #d8deec;
+    margin: 0 auto;
+    border-radius: 1%;
+}
+
+.ulMenu {
+    position: relative;
+    top: 270px;
+    width: 90%;
+    font-size: 25px;
+    list-style: none;
+    line-height: normal;
+    font-weight: bold;
+    left: 6%;
+}
+
+.liMenu {
+    float:left;
+    margin:0 0 0 3px;
+    padding:0;
+}
+
+.liMenu a {
+    padding: 15px 20px 40px 20px;
+    border-radius: 20%;
+    font-size: 20px;
+    color: #6f7588;
+    text-decoration: none;
+}
+
+.liMenu .aMenuProducts {
+    color: #ffffff;
+}
+
+.aMenuProducts {
+    background-color: #6f7588;
+}
+
+.aMenuUsers {
+    background-color: #d8deec;
+}

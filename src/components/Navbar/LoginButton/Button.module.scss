@@ -1,0 +1,43 @@
+// Variables
+$color-button-login: #0086c9;
+$color-button-login-hover: #b9e6fe;
+$color-text-button: #ffffff;
+$color-button-text-login-hover: #026AA2;
+
+// Styles
+button {
+  background-color: $color-button-login;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: $color-text-button;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+}
+
+button:hover,
+button:focus {
+  background-color: $color-button-login-hover;
+  color: $color-button-text-login-hover;
+}
+
+.buttonNavbarLoginButton {
+  right: 132px;
+  top: 16px;
+  bottom: 16px;
+}

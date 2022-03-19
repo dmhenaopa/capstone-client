@@ -1,0 +1,37 @@
+// Variables
+$color-blue-link: #0006BC;
+
+.divHeaderHome {
+    background-color: #ffffff;
+    width: 400px;
+    height: 400px;
+    top: 400px;
+    right: 165px;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position:absolute;
+}
+
+.h1HeaderHome {
+    color:#1C2C40;
+    margin-bottom: 30px;
+}
+
+.pHeaderHome {
+    color: #1C2C40;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.aHeaderHome {
+    color: $color-blue-link;
+    width: 400px;
+    text-align: right;
+}
+
+.aHeaderHome:after {
+    text-decoration: none;
+    content:'\279C';
+}

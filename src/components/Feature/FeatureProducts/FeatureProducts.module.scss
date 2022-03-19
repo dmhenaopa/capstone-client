@@ -1,0 +1,159 @@
+.divFeatureProducts {
+    width: 100%;
+    position: absolute;
+    top: 750px;
+    height: 1000px;
+
+}
+
+.divImgSubscriptions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.h2FeatureProducts {
+    color: #1C2C40;
+    position: absolute;
+    top: 64px;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+}
+
+.divImagesFeatureProducts {
+    position: relative;
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 400px;
+    height: 627px;
+    margin-right: 40px;
+    top: 200px;
+    margin-right: 60px;
+}
+
+.imgFeatureProduct1 {
+    grid-column: 3 / 7;
+    grid-row: 1 / 5;
+    object-fit: cover;
+    height: 332px;
+    width: 308px;
+    z-index: -1;
+}
+
+.imgFeatureProduct2 {
+    grid-column: 1 / 5;
+    grid-row: 4 / 7;
+    object-fit: cover;
+    height: 286px;
+    width: 308px;
+    z-index: 0;
+}
+
+.imgFeatureProduct3 {
+    grid-column: 4 / 6;
+    grid-row: 6 / 8;
+    object-fit: cover;
+    height: 186px;
+    width: 186px;
+    z-index: 1;
+}
+
+.divSubscriptions {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 540px;
+    height: 648px;
+    justify-content: content;
+    align-items: center;
+    margin-top: 200px;
+    color: #1C2C40;
+    margin-left: 60px;
+}
+
+.divSubscriptionInstaller {
+    padding-bottom: 40px;
+    width: 500px;
+}
+
+.h3FeatureProducts {
+    width: 444px;
+    padding-bottom: 10px;
+}
+
+.pFeatureProducts {
+    width: 500px;
+    line-height: 32px;
+}
+
+.divSubscriptionDocs {
+    padding-bottom: 40px;
+}
+
+.divSubscriptionInstaller
+.h3FeatureProducts:before {
+    content: '\25CF';
+    color: #0006BC;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.divSubscriptionDocs
+.h3FeatureProducts:before {
+    content: '\25CF';
+    color: #FD0235;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.divSubscriptionInstallerDocs
+.h3FeatureProducts:before {
+    content: '\25CF';
+    color: #2EC4B6;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.divCircle1 {
+    position: absolute;
+    background-color: #0006BC;
+    width: 72px;
+    height: 72px;
+    opacity: 0.6;
+    grid-column: 6 / 7;
+    grid-row: 3 / 4;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.divCircle2 {
+    position: absolute;
+    background-color: #FD0235;
+    width: 72px;
+    height: 72px;
+    opacity: 0.6;
+    grid-column: 2 / 3;
+    grid-row: 6 / 8;
+    border-radius: 50%;
+    z-index: -2;
+    align-self: center;
+    justify-content: start;
+}
+
+.divCircle3 {
+    position: absolute;
+    background-color: #2EC4B6;
+    width: 56px;
+    height: 56px;
+    opacity: 0.6;
+    grid-column: 5 / 7;
+    grid-row: 8 / 9;
+    border-radius: 50%;
+    z-index: -2;
+    align-self: center;
+    justify-self: center;
+}
