@@ -122,95 +122,130 @@ export function Users() {
     return (
         <Fragment>
             <input className={styles.inputSearch} type='search' name='search' placeholder='Buscar usuario' />
-            <button className={styles.buttonNewProduct}>Agregar nuevo usuario</button>
-            <div className={styles.divUsersTable}>
-                <form onSubmit={handleEditFormSubmit}>
-                    <table id='users' className={styles.tableUsersTable}>
-                        <thead>
-                            <tr>
-                                <th>ID Usuario</th>
-                                <th>Nombre</th>
-                                <th>Apellidos</th>
-                                <th>Teléfono</th>
-                                <th>Correo electrónico</th>
-                                <th>Empresa</th>
-                                <th>ID Producto</th>
-                                <th>Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        {contacts.map((contact) => (
-                                <Fragment>
-                                    { editContactId === contact.id ?
-                                    (<EditableRow 
-                                            editFormData={editFormData} 
-                                            handleEditFormChange={handleEditFormChange}
-                                            handleCancelClick={handleCancelClick}
-                                        />) :
-                                        (<ReadOnlyRow
-                                            contact={contact} 
-                                            handleEditClick={handleEditClick}
-                                            handleDeleteClick={handleDeleteClick}
-                                        />)
-                                    }
-                                </Fragment>
-                            ))}
-                        </tbody>
-                    </table>
-                </form>
-                <div className={styles.newUser}>
+            <div className={styles.divTableAndNewUser}>
+                <div className={styles.divUsersTable}>
+                    <form onSubmit={handleEditFormSubmit}>
+                        <table id='users' className={styles.tableUsersTable}>
+                            <thead>
+                                <tr>
+                                    <th>ID Usuario</th>
+                                    <th>Nombre</th>
+                                    <th>Apellidos</th>
+                                    <th>Teléfono</th>
+                                    <th>Correo electrónico</th>
+                                    <th>Empresa</th>
+                                    <th>ID Producto</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {contacts.map((contact) => (
+                                    <Fragment>
+                                        { editContactId === contact.id ?
+                                        (<EditableRow 
+                                                editFormData={editFormData} 
+                                                handleEditFormChange={handleEditFormChange}
+                                                handleCancelClick={handleCancelClick}
+                                            />) :
+                                            (<ReadOnlyRow
+                                                contact={contact} 
+                                                handleEditClick={handleEditClick}
+                                                handleDeleteClick={handleDeleteClick}
+                                            />)
+                                        }
+                                    </Fragment>
+                                ))}
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div className={styles.divNewUser}>
                     <h2>Nuevo usuario</h2>
                     <form onSubmit={handleAddFormSubmit}>
-                        <input 
-                            type='text' 
-                            name='id' 
-                            required='required' 
-                            placeholder='Id'
-                            onChange={handleAddFormChange}
-                        />
-                        <input 
-                            type='text' 
-                            name='first_name' 
-                            required='required' 
-                            placeholder='Nombre'
-                            onChange={handleAddFormChange}
-                        />
-                        <input 
-                            type='text' 
-                            name='last_name' 
-                            required='required' 
-                            placeholder='Apellidos'
-                            onChange={handleAddFormChange}
-                        />
-                        <input 
-                            type='text' 
-                            name='phone_number' 
-                            required='required' 
-                            placeholder='Número telefónico'
-                            onChange={handleAddFormChange}
-                        />
-                        <input 
-                            type='text' 
-                            name='email' 
-                            required='required' 
-                            placeholder='Correo electrónico'
-                            onChange={handleAddFormChange}
-                        />
-                        <input 
-                            type='text' 
-                            name='company' 
-                            required='required' 
-                            placeholder='Nombre empresa'
-                            onChange={handleAddFormChange}
-                        />
-                        <input 
-                            type='text' 
-                            name='subscription_id' 
-                            required='required' 
-                            placeholder='Id de suscripción'
-                            onChange={handleAddFormChange}
-                        />
-                        <button type='submit'>Ingresar información</button>
+                        <div className={styles.divFormInput}>
+                            <div className={styles.divFirstRow}>
+                                <label for='id'>Id
+                                    <input
+                                        id='id'
+                                        className={styles.inputNewUser}
+                                        type='text' 
+                                        name='id' 
+                                        required='required' 
+                                        placeholder='Id'
+                                        onChange={handleAddFormChange}
+                                    />
+                                </label>
+                                <label for='firstname'>Nombre
+                                    <input
+                                        id='firstname'
+                                        className={styles.inputNewUser}
+                                        type='text' 
+                                        name='first_name' 
+                                        required='required' 
+                                        placeholder='Nombre'
+                                        onChange={handleAddFormChange}
+                                    />
+                                </label>
+                                <label for='lastname'>Apellidos
+                                    <input 
+                                        id='lastname'
+                                        className={styles.inputNewUser}
+                                        type='text' 
+                                        name='last_name' 
+                                        required='required' 
+                                        placeholder='Apellidos'
+                                        onChange={handleAddFormChange}
+                                    />
+                                </label>
+                                <label for='phone_number'>Número telefónico
+                                    <input 
+                                        id='phone_number'
+                                        className={styles.inputNewUser}
+                                        type='text' 
+                                        name='phone_number' 
+                                        required='required' 
+                                        placeholder='Número telefónico'
+                                        onChange={handleAddFormChange}
+                                    />
+                                </label>
+                            </div>
+                            <div className={styles.divSecondRow}>
+                                <label for='email'>Correo electrónico
+                                    <input 
+                                        id='email'
+                                        className={styles.inputNewUser}
+                                        type='text' 
+                                        name='email' 
+                                        required='required' 
+                                        placeholder='Correo electrónico'
+                                        onChange={handleAddFormChange}
+                                    />
+                                </label>
+                                <label for='company'>Empresa
+                                    <input 
+                                        id='company'
+                                        className={styles.inputNewUser}
+                                        type='text' 
+                                        name='company' 
+                                        required='required' 
+                                        placeholder='Nombre empresa'
+                                        onChange={handleAddFormChange}
+                                    />
+                                </label>
+                                <label for='subscription_id'>Id de suscripción
+                                    <input 
+                                        id='subscription_id'
+                                        className={styles.inputNewUser}
+                                        type='text' 
+                                        name='subscription_id' 
+                                        required='required' 
+                                        placeholder='Id de suscripción'
+                                        onChange={handleAddFormChange}
+                                    />
+                                </label>
+                                <button className={styles.buttonNewProduct} type='submit'>Agregar nuevo usuario</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
