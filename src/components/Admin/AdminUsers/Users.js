@@ -73,7 +73,7 @@ export function Users() {
         event.preventDefault();
 
         const editedContact = {
-            id: editContactId,//editFormData.id, //DIFERENTE id: editContactId,
+            id: editContactId, //editFormData.id, //DIFERENTE id: editContactId,
             first_name: editFormData.first_name,
             last_name: editFormData.last_name,
             phone_number: editFormData.phone_number,
