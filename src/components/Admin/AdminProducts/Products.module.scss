@@ -1,4 +1,4 @@
-.divProducts {
+/*.divProducts {
     position: absolute;
     top: 100px;
     left: 5%;
@@ -33,7 +33,7 @@
     background-color: #adb9d1;
     position: absolute;
     width: 100%;
-    height: 100px;
+    height: 170px;
     margin-bottom: 5px;
     border-radius: 1%;
     display: flex;
@@ -45,8 +45,8 @@
     background-color: #adb9d1;
     position: absolute;
     width: 100%;
-    height: 100px;
-    margin-top: 130px;
+    height: 170px;
+    margin-top: 200px;
     border-radius: 1%;
     display: flex;
     align-items: center;
@@ -57,36 +57,59 @@
     background-color: #adb9d1;
     position: absolute;
     width: 100%;
-    height: 100px;
-    margin-top: 260px;
+    height: 240px;
+    margin-top: 400px;
     border-radius: 1%;
-    margin-right: 30px;
     display: flex;
     align-items: center;
     line-height: 32px;
 }
 
-.h2Product {
+.divText {
     float: left;
-    width: 40%;
-    text-align: center;
+    width: 70%;
+    text-align: justify;
     font-weight: 400;
-    margin: auto 5%;
-    font-size: 17px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: justify;
+    padding-left: 50px;
+}
+
+.h2Product {
+    font-size: 20px;
+}
+
+.divLeftText {
+    float: left;
+    flex-direction: column;
+    max-width: 700px;
+}
+
+.pVersionProduct {
+    float: right;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.divProduct1 .pVersionProduct {
+    margin-left: 120px;
 }
 
 .divButtons {
     position: relative;
-    width: 60%;
+    width: 30%;
     float: right;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 
 }
 
 .buttonDownload {
-    grid-column: 1 / 1;
+    grid-column: 1;
     background-color: #0ba5ec;
     color: #ffffff;
 }
@@ -97,8 +120,9 @@
     color: #026aa2;
 }
 
-.buttonUpdate {
-    grid-column: 2 / 2;
+.buttonUpdate,
+.buttonUpdate:active {
+    grid-column: 2;
     background-color: #0ba5ec;
     color: #ffffff;
 }
@@ -109,20 +133,8 @@
     color: #026aa2;
 }
 
-.buttonPermissions {
-    grid-column: 3 / 3;
-    background-color: #0ba5ec;
-    color: #ffffff;
-}
-
-.buttonPermissions:hover,
-.buttonPermissions:focus {
-    background-color: #b9e6fe;
-    color: #026aa2;
-}
-
 .buttonDelete {
-    grid-column: 4 / 4;
+    grid-column: 3;
     background-color: #f04438;
     color: #ffffff;
 }
@@ -131,4 +143,205 @@
 .buttonDelete:focus {
   background-color: #fecdca;
   color: #b42318;
+}*/
+.inputSearch {
+    position: absolute;
+    top: 17px;
+    left: 5%;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.divFormAndNewProduct {
+    color: #1C2C40;
+    display: grid;
+    grid-template-rows: 1.4fr 1fr;
+    position: relative;
+    padding-inline-end: 160px;
+    min-height: inherit;
+}
+
+.divFormProducts {
+    position: relative;
+    color: #1C2C40;
+    top: 100px;
+    height: calc(100% - 100px - 1em);
+    justify-content: center;
+    grid-row: 1;
+    overflow: auto;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+
+.divNewProduct {
+    grid-row: 2;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.divNewProduct h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.divNewProduct form {
+    border: 1px solid #1C2C40;
+    height: 260px;
+}
+
+.buttonNewProduct {
+    position: absolute;
+    right: 10%;
+    background-color: #12b76a;
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: -75px;
+}
+
+.buttonNewProduct:hover,
+.buttonNewProduct:focus {
+    background-color: #a6f4c5;
+    color: #027a48;
+}
+
+.divProduct {
+    display: grid;
+    grid-template-columns: 55% 1fr 280px 1em;
+}
+
+.divButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    & > button {
+        position: initial;
+    }
+}
+
+.h2Product {
+    font-size: 20px;
+    line-height: 2em;
+
+}
+
+.pVersionProduct {
+    justify-self: center;
+    align-self: center;
+}
+
+label:after {
+    content: '';
+}
+
+.divText {
+    display: flex;
+}
+
+.buttonDownload {
+    grid-column: 1;
+    background-color: #0ba5ec;
+    color: #ffffff;
+}
+
+.buttonDownload:hover,
+.buttonDownload:focus {
+    background-color: #b9e6fe;
+    color: #026aa2;
+}
+
+.buttonUpdate,
+.buttonUpdate:active {
+    grid-column: 2;
+    background-color: #0ba5ec;
+    color: #ffffff;
+}
+
+.buttonUpdate:hover,
+.buttonUpdate:focus {
+    background-color: #b9e6fe;
+    color: #026aa2;
+}
+
+.buttonDelete {
+    grid-column: 3;
+    background-color: #f04438;
+    color: #ffffff;
+}
+
+.buttonDelete:hover,
+.buttonDelete:focus {
+  background-color: #fecdca;
+  color: #b42318;
+}
+
+.inputProductForm {
+    width: 400px;
+    height: 30px;
+    margin: 20px -90px 20px 20px;
+}
+
+.inputFileUpload {
+    background-color: #d8deec;
+    padding-left: 10px;
+}
+
+input[type=file]::-webkit-file-upload-button  {
+    background-color: #fd853a;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+    height: 40px;
+    width: 170px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -12px;
+}
+      
+input[type=file]::-webkit-file-upload-button:hover,
+input[type=file]::-webkit-file-upload-button:focus {
+    background-color: #fddcab;
+    color: #C4320A;
+}
+
+.divFormLeftRight {
+    display: flex;
+    flex-direction: row;
+}
+
+.divLeftSide {
+    float: left;
+    width: 40%;
+}
+
+.divRightSide {
+    float: right;
+    textarea {
+        width: 500px;
+        height: 150px;
+    }
+    
 }

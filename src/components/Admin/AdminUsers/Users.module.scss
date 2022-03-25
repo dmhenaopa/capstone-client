@@ -6,15 +6,17 @@
     border-radius: 20px;
 }
 
-.buttonNewProduct {
+.buttonNewUser {
     position: absolute;
     right: 10%;
     background-color: #12b76a;
     color: #ffffff;
+    font-size: 15px;
+    margin-top: -20px;
 }
 
-.buttonNewProduct:hover,
-.buttonNewProduct:focus {
+.buttonNewUser:hover,
+.buttonNewUser:focus {
     background-color: #a6f4c5;
     color: #027a48;
 }
@@ -121,6 +123,20 @@
     height: 30px;
 }
 
+.buttonEditUser,
+.buttonEditUser:active {
+    grid-column: 2;
+    background-color: #0ba5ec;
+    color: #ffffff;
+}
+
+.buttonEditUser:hover,
+.buttonEditUser:focus {
+    background-color: #b9e6fe;
+    color: #026aa2;
+}
+
+
 .buttonDeleteUser {
     float: right;
     padding: 6px;
@@ -156,7 +172,8 @@
 }
 
 .divFormInput input {
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-top:20px;
 }
 
 .divFirstRow {
@@ -193,6 +210,19 @@
     margin: 0;
     font-size: 15px;
     height: 30px;
+}
+
+.buttonSaveNewInfo,
+.buttonSaveNewInfo:active {
+    grid-column: 2;
+    background-color: #0ba5ec;
+    color: #ffffff;
+}
+
+.buttonSaveNewInfo:hover,
+.buttonSaveNewInfo:focus {
+    background-color: #b9e6fe;
+    color: #026aa2;
 }
 
 .buttonCancelNewInfo {

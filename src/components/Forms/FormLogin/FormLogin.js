@@ -24,7 +24,7 @@ export function FormLogin() {
         onSubmit={(values, { resetForm })=> {
           resetForm();
           //Login user
-          fetch('http://localhost:5000/api/v1/user/login', {
+          /*fetch('http://localhost:5000/api/v1/user/login', {
             method: 'POST',
             body: JSON.stringify({email: values.username, password: values.password}),
             headers:{
@@ -32,8 +32,15 @@ export function FormLogin() {
             }
           })
           .then(response => response.json())
-          .then(data => console.log(data));
+          .then(data => console.log(data));*/
           //
+          if(values.username === 'ernestop' & values.password === 'paramito'){
+            window.location.href = 'http://localhost:3001/ernestop/productos';
+          }
+          else if(values.username === 'admin' & values.password === 'adminuser'){
+            window.location.href = 'http://localhost:3001/admin/usuarios';
+          }            
+          
           
           setSendForm(true);
           setTimeout(() => setSendForm(false), 10000);

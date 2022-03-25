@@ -164,7 +164,6 @@ export function Users() {
                     <form onSubmit={handleAddFormSubmit}>
                         <div className={styles.divFormInput}>
                             <div className={styles.divFirstRow}>
-                                <label for='id'>Id
                                     <input
                                         id='id'
                                         className={styles.inputNewUser}
@@ -174,8 +173,6 @@ export function Users() {
                                         placeholder='Id'
                                         onChange={handleAddFormChange}
                                     />
-                                </label>
-                                <label for='firstname'>Nombre
                                     <input
                                         id='firstname'
                                         className={styles.inputNewUser}
@@ -185,8 +182,6 @@ export function Users() {
                                         placeholder='Nombre'
                                         onChange={handleAddFormChange}
                                     />
-                                </label>
-                                <label for='lastname'>Apellidos
                                     <input 
                                         id='lastname'
                                         className={styles.inputNewUser}
@@ -196,8 +191,6 @@ export function Users() {
                                         placeholder='Apellidos'
                                         onChange={handleAddFormChange}
                                     />
-                                </label>
-                                <label for='phone_number'>Número telefónico
                                     <input 
                                         id='phone_number'
                                         className={styles.inputNewUser}
@@ -207,10 +200,8 @@ export function Users() {
                                         placeholder='Número telefónico'
                                         onChange={handleAddFormChange}
                                     />
-                                </label>
                             </div>
                             <div className={styles.divSecondRow}>
-                                <label for='email'>Correo electrónico
                                     <input 
                                         id='email'
                                         className={styles.inputNewUser}
@@ -220,8 +211,6 @@ export function Users() {
                                         placeholder='Correo electrónico'
                                         onChange={handleAddFormChange}
                                     />
-                                </label>
-                                <label for='company'>Empresa
                                     <input 
                                         id='company'
                                         className={styles.inputNewUser}
@@ -231,8 +220,6 @@ export function Users() {
                                         placeholder='Nombre empresa'
                                         onChange={handleAddFormChange}
                                     />
-                                </label>
-                                <label for='subscription_id'>Id de suscripción
                                     <input 
                                         id='subscription_id'
                                         className={styles.inputNewUser}
@@ -242,8 +229,7 @@ export function Users() {
                                         placeholder='Id de suscripción'
                                         onChange={handleAddFormChange}
                                     />
-                                </label>
-                                <button className={styles.buttonNewProduct} type='submit'>Agregar nuevo usuario</button>
+                                <button className={styles.buttonNewUser} type='submit'>Agregar nuevo usuario</button>
                             </div>
                         </div>
                     </form>

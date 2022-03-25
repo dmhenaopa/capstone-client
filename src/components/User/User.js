@@ -7,8 +7,8 @@ export function User() {
     return (
         <Fragment>
             <Routes>
-                <Route path='/user01/productos' element={<UserProducts />} />
-                <Route path='/user01/perfil' element={<UserProfile />} />
+                <Route path='/ernestop/productos' element={<UserProducts />} />
+                <Route path='/ernestop/perfil' element={<UserProfile />} />
             </Routes>
         </Fragment>
     );

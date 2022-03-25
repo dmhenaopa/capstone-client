@@ -1,24 +1,23 @@
 import React, { Fragment, useState, useEffect, setState } from 'react';
 import styles from './UserProfile.module.scss';
-import Avatar from "boring-avatars";
+import Image from './../../assets/frailejon.jpg';
 
 
 export function UserProfile() {
+
     return (
         <Fragment>
             <div className={styles.divWelcomeUser}>
-                <h1 className={styles.h1User}>¡Bienvenido usuario01!</h1>
+                <h1 className={styles.h1User}>¡Bienvenido ernestop!</h1>
                 <hr />
             </div>
             <ul className={styles.ulMenu}>
-                <li className={styles.liMenu}><a className={styles.aMenuProducts} href="/user01/productos">Productos</a></li>
-                <li className={styles.liMenu}><a className={styles.aMenuProfile} href="/user01/perfil">Mi perfil</a></li>
+                <li className={styles.liMenu}><a className={styles.aMenuProducts} href="/ernestop/productos">Productos</a></li>
+                <li className={styles.liMenu}><a className={styles.aMenuProfile} href="/ernestop/perfil">Mi perfil</a></li>
             </ul>
             <div className={styles.divTabs}>
                 <div className={styles.divUserProfile}>
-                    <div className={styles.imgProfile}>
-                        <Avatar size={220} name="Frailejon Ernesto Perez" variant="bauhaus" colors={["#16C1C8", "#49CCCC", "#7CD7CF", "#AEE1D3", "#E1ECD6"]} square={'True'} />
-                    </div>
+                    <img className={styles.imgProfile} src={Image} alt=''></img>
                     <table className={styles.tableUserTable}>
                         <tbody>
                             <td className={styles.tdBold}>
@@ -29,8 +28,8 @@ export function UserProfile() {
                                 <tr>Empresa:</tr>
                             </td>
                             <td>
-                                <tr>Frailejón Ernesto</tr>
-                                <tr>Pérez</tr>
+                                <tr>Ernesto</tr>
+                                <tr>Pérez Frailejón</tr>
                                 <tr>300-1234567</tr>
                                 <tr>ernestico@paramo.com</tr>
                                 <tr>Páramo Co.</tr>
@@ -46,3 +45,8 @@ export function UserProfile() {
         </Fragment>
     );
 }
+
+/*
+import Avatar from "boring-avatars";
+<Avatar size={220} name="Frailejon Ernesto Perez" variant="bauhaus" colors={["#16C1C8", "#49CCCC", "#7CD7CF", "#AEE1D3", "#E1ECD6"]} square={'True'} />
+*/

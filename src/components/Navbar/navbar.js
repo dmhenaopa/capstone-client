@@ -22,7 +22,7 @@ export function Navbar() {
                 <Route path='/nosotros' element={<LoginButton />} />
                 <Route path='/contacto' element={<LoginButton />} />
                 <Route path='/login' element={<LoginButton />} />
-                <Route path='/user01/*' element={<LogoutButton />} />
+                <Route path='/ernestop/*' element={<LogoutButton />} />
                 <Route path='/admin/*' element={<LogoutButton />} />
             </Routes>
         </nav>

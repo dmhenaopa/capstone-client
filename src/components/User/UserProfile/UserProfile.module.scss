@@ -24,7 +24,7 @@ hr {
     position: relative;
     top: 280px;
     width: 90%;
-    height: 400px;
+    height: 500px;
     line-height: normal;
     background-color: #d8deec;
     margin: 0 auto;
@@ -78,8 +78,10 @@ hr {
     width: 90%;
     top: 40px;
     border-radius: 1%;
-    height: 250px;
+    height: 420px;
     line-height: 32px;
+    align-items: center;
+    justify-content: center;
 }
 
 .tdBold {
@@ -89,15 +91,17 @@ hr {
 
 .imgProfile {
     float: left;
-    margin: 10px 20px 10px 50px;
-    width: 220px;
-    height: 220px;
+    margin: 0 50px 0 100px;
+    width: 320px;
+    height: 320px;
     border: 1px solid #1C2C40;
+    object-fit: cover;
 }
 
 .tableUserTable {
     float: right;
-    margin-left: 100px;
+    margin-left: 40px;
+    margin-top: -80px;
 }
 
 .divButtons {
@@ -105,14 +109,14 @@ hr {
     width: 100%;
     justify-content: center;
     position: absolute;
-    top: 320px;
+    top: 340px;
 }
 
 .buttonUpdate {
     background-color: #0ba5ec;
     color: #ffffff;
     float: left;
-    margin-right: 300px;
+    margin-left:300px;
 }
 
 .buttonUpdate:hover,
@@ -122,11 +126,11 @@ hr {
 }
 
 .buttonDelete {
-    grid-column: 4 / 4;
+    grid-column: 4;
     background-color: #f04438;
     color: #ffffff;
     float: right;
-    margin-left: 300px;
+    margin-left: 700px;
 }
 
 .buttonDelete:hover,

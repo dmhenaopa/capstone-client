@@ -26,7 +26,7 @@ function App() {
         <Route exact path='/nosotros' element={<AboutUs />} />
         <Route exact path='/contacto' element={<Contact />} />
         <Route exact path='/login' element={<Login />} />
-        <Route path='/user01/*' element={<User />} />
+        <Route path='/ernestop/*' element={<User />} />
         <Route path='/admin/*' element={<Admin />} />
       </Routes>
       <Feature />
