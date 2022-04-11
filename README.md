@@ -14,6 +14,7 @@ The frontend development was done with React, JavaScript, CSS, Sass and was boot
 The proposal was initially built in Figma.
 
 <table>
+<tbody>
 <tr>
 	<td><img class="test" width="100" alt="home-landing" src="https://user-images.githubusercontent.com/77861287/162756535-0d876b7c-65d8-41b8-9d08-3893b24a5d59.png"></td>
 	<td><img width="100" alt="products" src="https://user-images.githubusercontent.com/77861287/162756932-9dc42d46-7544-4030-9c46-08ae91cb53c8.png"></td>
@@ -21,15 +22,17 @@ The proposal was initially built in Figma.
 	<td><img width="100" alt="contact" src="https://user-images.githubusercontent.com/77861287/162757188-3a874100-bac6-491b-a254-17d4a2b98eee.png"></td>
 	<td><img width="100" alt="login" src="https://user-images.githubusercontent.com/77861287/162757304-fb5c5ea1-fb35-4e05-8f71-547dcda7411f.png"> </td>
 </tr>
+</tbody>
+</table>
 
 <style>
-td {
+table td {
 vertical-align: top;
 }
 </style>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDUyNTc3NzQsLTczNDA1Njc2OCw2OT
-M3NTk1ODksODE0Njc2MzY2LC02MzQwMDUwNzAsLTE4NzYzNDQ2
-NTFdfQ==
+eyJoaXN0b3J5IjpbMTI3NjI4ODUzNCwtNzM0MDU2NzY4LDY5Mz
+c1OTU4OSw4MTQ2NzYzNjYsLTYzNDAwNTA3MCwtMTg3NjM0NDY1
+MV19
 -->
