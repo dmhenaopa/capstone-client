@@ -13,7 +13,7 @@ The frontend development was done with React, JavaScript, CSS, Sass and was boot
 ## Screenshots
 The proposal was initially built in Figma.
 
-<table border="1px solid #000">
+<table border>
 <tbody>
 <tr>
 	<td><img class="test" width="100" alt="home-landing" src="https://user-images.githubusercontent.com/77861287/162756535-0d876b7c-65d8-41b8-9d08-3893b24a5d59.png"></td>
@@ -26,7 +26,7 @@ The proposal was initially built in Figma.
 </table>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MDE1NDUxNSwxMjc2Mjg4NTM0LC03Mz
+eyJoaXN0b3J5IjpbMjAwNTMxOTkzMywxMjc2Mjg4NTM0LC03Mz
 QwNTY3NjgsNjkzNzU5NTg5LDgxNDY3NjM2NiwtNjM0MDA1MDcw
 LC0xODc2MzQ0NjUxXX0=
 -->
