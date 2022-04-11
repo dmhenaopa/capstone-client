@@ -11,6 +11,7 @@ This is a demonstration of how the application works:
 
 
 ## Screenshots
+The proposal was initially built in Figma.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODQxNTIxNCwtMTg3NjM0NDY1MV19
+eyJoaXN0b3J5IjpbLTYzNDAwNTA3MCwtMTg3NjM0NDY1MV19
 -->
