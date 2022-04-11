@@ -12,6 +12,9 @@ This is a demonstration of how the application works:
 
 ## Screenshots
 The proposal was initially built in Figma.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNDAwNTA3MCwtMTg3NjM0NDY1MV19
+eyJoaXN0b3J5IjpbODE0Njc2MzY2LC02MzQwMDUwNzAsLTE4Nz
+YzNDQ2NTFdfQ==
 -->
